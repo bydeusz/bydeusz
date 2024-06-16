@@ -1,51 +1,61 @@
-import Link from "next/link";
 import {
   ChatBubbleBottomCenterTextIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import Image from "next/image";
+
+import Links from "@/components/actions/Links/Links";
+import Button from "@/components/actions/Button/Button";
 
 export default function Home() {
   return (
-    <main className="w-full lg:w-1/2 px-4 space-y-8">
-      <h1 className="text-6xl font-extrabold">
+    <main className="w-full lg:w-1/2 px-6">
+      <Image
+        className="mt-8 mb-[130px] xl:mb-[200px] mx-auto h-[35px] w-auto"
+        src="/img/bydeusz-logo.svg"
+        alt="bydeusz logo"
+        width={150}
+        height={35}
+      />
+      <h1 className="text-6xl font-extrabold mb-8">
         <span className="font-normal">Tech solutions</span> that free up
         business resources
       </h1>
-      <p className="text-2xl font-light">
+      <p className="text-2xl font-light mb-8">
         👋🏽{" "}
         <span className=" opacity-30">
           I am Tadeusz. An Agile Software Developer specialised in Business
           Automations. Currently available for new projects, let’s chat!
         </span>
       </p>
-      <Link
-        href="#"
-        className="inline-block bg-bydeusz_light_green font-extrabold text-bydeusz_dark_green rounded-full py-6 px-10 hover:bg-bydeusz_green">
+      <Button
+        href="https://drive.google.com/file/d/1F8kx3C3mnp5syt7fnY_oouY3BDbcj5F8/view?usp=sharing"
+        target="_blank">
         Download my pitch deck
-      </Link>
-      <ul className="text-sm flex space-x-24 justify-center items-center font-light">
-        <li>
-          <Link href="#" className="opacity-30 hover:opacity-100">
-            Connect with me
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="tel:+31620370451"
-            className="flex items-center opacity-30 hover:opacity-100">
-            <PhoneIcon className="w-4 h-4 mr-2" />
-            Call me +316 20370451
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="#"
-            className="flex items-center opacity-30 hover:opacity-100">
-            <ChatBubbleBottomCenterTextIcon className="w-4 h-4 mr-2" />
-            Schedule a meeting
-          </Link>
-        </li>
-      </ul>
+      </Button>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
+        <Links
+          href="https://www.linkedin.com/in/tadeuszderuijter/"
+          target="_blank">
+          <Image
+            src="/img/linkedin-icon.svg"
+            alt="linkedin icon on website"
+            className="mr-2"
+            objectFit="cover"
+            width={24}
+            height={24}
+          />
+          Connect with me
+        </Links>
+        <Links href="tel:+31620370451">
+          <PhoneIcon className="w-4 h-4 mr-2" />
+          Call me +316 20370451
+        </Links>
+        <Links href="#">
+          <ChatBubbleBottomCenterTextIcon className="w-4 h-4 mr-2" />
+          Schedule a meeting
+        </Links>
+      </div>
     </main>
   );
 }

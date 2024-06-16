@@ -9,16 +9,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative bg-bydeusz_dark_green text-bydeusz_light_green flex items-center h-screen w-full font-gilmer justify-center text-center">
+      <body className="relative bg-bydeusz_dark_green text-bydeusz_light_green flex h-screen w-full font-gilmer justify-center text-center">
         <Image
-          className="absolute top-6 z-0 h-[50px] w-auto"
-          src="/img/bydeusz-logo.svg"
-          alt="bydeusz logo"
-          width={200}
-          height={200}
-        />
-        <Image
-          className="absolute top-0 right-0 z-0 h-[150px] w-[150px] lg:h-[400px] lg:w-[400px]"
+          className="absolute top-0 right-0 z-0 h-[150px] w-[150px] lg:h-[250px] lg:w-[250px] xl:h-[300px] xl:w-[300px] 2xl:h-[400px] 2xl:w-[400px]"
           src="/img/bydeusz-bg-visual.svg"
           alt="bydeusz background visual"
           objectFit="cover"
