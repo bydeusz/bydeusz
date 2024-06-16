@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        bydeusz_dark_green: "#111A0B",
+        bydeusz_green: "#52AF61",
+        bydeusz_light_green: "#CCF1D3",
+        bydeusz_blue: "#4C89F7",
+        bydeusz_purple: "#6A58D2",
+        bydeusz_yellow: "#CCCC49",
+      },
+      fontFamily: {
+        gilmer: ["Gilmer", "sans"],
       },
     },
   },
