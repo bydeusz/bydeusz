@@ -9,7 +9,7 @@ import Button from "@/components/actions/Button/Button";
 
 export default function Home() {
   return (
-    <main className="w-full lg:w-1/2 px-6">
+    <main className="z-10 w-full lg:w-1/2 px-6">
       <Image
         className="mt-8 mb-[130px] xl:mb-[200px] mx-auto h-[35px] w-auto"
         src="/img/bydeusz-logo.svg"
@@ -33,7 +33,7 @@ export default function Home() {
         target="_blank">
         Download my pitch deck
       </Button>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-16">
+      <div className="grid lg:grid-cols-1 xl:grid-cols-3 gap-4 mt-16">
         <Links
           href="https://www.linkedin.com/in/tadeuszderuijter/"
           target="_blank">
