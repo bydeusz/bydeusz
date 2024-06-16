@@ -1,4 +1,8 @@
 import Link from "next/link";
+import {
+  ChatBubbleBottomCenterTextIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/outline";
 
 export default function Home() {
   return (
@@ -26,12 +30,18 @@ export default function Home() {
           </Link>
         </li>
         <li>
-          <Link href="#" className="opacity-30 hover:opacity-100">
-            Call me +316 12345678
+          <Link
+            href="tel:+31620370451"
+            className="flex items-center opacity-30 hover:opacity-100">
+            <PhoneIcon className="w-4 h-4 mr-2" />
+            Call me +316 20370451
           </Link>
         </li>
         <li>
-          <Link href="#" className="opacity-30 hover:opacity-100">
+          <Link
+            href="#"
+            className="flex items-center opacity-30 hover:opacity-100">
+            <ChatBubbleBottomCenterTextIcon className="w-4 h-4 mr-2" />
             Schedule a meeting
           </Link>
         </li>
