@@ -29,7 +29,7 @@ export default function Home() {
         </span>
       </p>
       <Button
-        href="https://drive.google.com/file/d/1dvAnnRDOSPXD3dfhW4itAmYA6tkbih10/view?usp=sharing"
+        href="https://drive.google.com/file/d/1Jo6hr5nokEuWEwV0meETRQrktuVkFgy1/view?usp=sharing"
         target="_blank">
         Download my pitch deck
       </Button>
