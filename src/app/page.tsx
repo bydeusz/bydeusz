@@ -59,3 +59,35 @@ export default function Home() {
     </main>
   );
 }
+
+export async function generateMetadata() {
+  return {
+    title: "Freelance Software Engineer for Business Automation || byDeusz",
+    description:
+      "Optimize your business processes with byDeusz, expert freelance software engineer specializing in business process automation. Boost efficiency and productivity with tailored automation solutions.",
+
+    openGraph: {
+      title: "Freelance Software Engineer for Business Automation || byDeusz",
+      description: "",
+      url: "https://bydeusz.com",
+      siteName: "byDeusz",
+      images: [
+        {
+          url: "https://bydeusz.com/img/og-image.jpg",
+          width: 800,
+          height: 600,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: "Freelance Software Engineer for Business Automation || byDeusz",
+      description:
+        "Optimize your business processes with byDeusz, expert freelance software engineer specializing in business process automation. Boost efficiency and productivity with tailored automation solutions.",
+      images: "https://bydeusz.com/img/og-image.jpg",
+    },
+  };
+}
